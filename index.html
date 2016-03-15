@@ -246,6 +246,127 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/15/Android Studio下修改应用包名/" itemprop="url">
+                  Android Studio下修改应用包名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-15T11:51:56+08:00" content="2016-03-15">
+              2016-03-15
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Android-Studio/" itemprop="url" rel="index">
+                    <span itemprop="name">Android Studio</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/15/Android Studio下修改应用包名/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/Android Studio下修改应用包名/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>由于操蛋的需求，需要将原有的应用包名（注意！！！不是Project Name,是Package Name。注意！！！不是Project Name,是Package Name。注意！！！不是Project Name,是Package Name。   重要的事情说三遍），之前由于刚转AS在网上找了改包名的文章，结果都是说改Project Name的，跳坑不止<img src="/img/emjo/wuyu.jpg" alt="无语">因此写下这篇文章，以示后人….呜哈哈</p>
+<p><strong>修改步骤如下：</strong><br>1、首先点击下图所示的 <strong><em>位置 1</em></strong> <img src="/img/android/rename1.png" alt="step1"></p>
+<p>2、然后点击 <strong><em>位置 2</em></strong>，默认位置2是勾选的状态，我们将勾选去掉，会发现工程的包结构发生了一些改变。</p>
+<p>3、在你要更改的包的层级处，选中按下Shift + F6,如下图：<img src="/img/android/rename2.png" alt="step2"><br>然后选择Rename Packge进行修改。</p>
+<p>4、将build.gradle文件中的applicationId进行相应的修改，改成你期望的包名。</p>
+<p>5、最后将AndroidManifest.xml文件中的manifest节点下的package进行相应修改，修改成你期望的包名即可。</p>
+<p><strong>大功告成，就是辣么简单。如果按照如上步骤你还不会改应用包名，那么狠郑重的告诉你，你可以现在，立刻，马上把电脑砸了，不谢，请叫我雷锋！！！</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/07/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -370,13 +491,27 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
           
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -447,15 +582,9 @@
   </a>
 </div>
 
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?c84312980dbab267c6cbf9990929d847";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+ </script>
+ </br>累计访问PV量:<span id="busuanzi_value_site_pv"></span>，  累计访问UV量:<span id="busuanzi_value_site_uv"></span>
 
 
 
